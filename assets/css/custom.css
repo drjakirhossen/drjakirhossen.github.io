@@ -1,0 +1,439 @@
+/* Add left spacing to logo name in header */
+.hb-header .navbar-brand,
+header .navbar-brand,
+.navbar-brand {
+  padding-left: 1.5rem !important;
+}
+
+/* Full width sections */
+.full-width-section {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.full-width-section .container,
+.full-width-section > div,
+.full-width-section .prose,
+.full-width-section .markdown {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 8rem !important;
+  padding-right: 8rem !important;
+}
+
+.full-width-section .card,
+.full-width-section article {
+  text-align: left !important;
+}
+
+.full-width-section h3,
+.full-width-section p,
+.full-width-section div {
+  text-align: left !important;
+}
+
+.full-width-section * {
+  text-align: left !important;
+}
+
+.full-width-section .card-body,
+.full-width-section .card-text {
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+/* Others page specific padding */
+.others-page-padding {
+  padding-left: 12rem !important;
+  padding-right: 12rem !important;
+}
+
+@media (max-width: 768px) {
+  .full-width-section .container,
+  .full-width-section > div,
+  .full-width-section .prose,
+  .full-width-section .markdown {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+/* Universal left alignment for all resume biography sections */
+section[class*="resume-biography"] {
+  text-align: left !important;
+  padding-top: 1rem !important;
+  padding-bottom: 2rem !important;
+}
+
+section[class*="resume-biography"] * {
+  text-align: left !important;
+}
+
+/* Dark mode styling for Education and Experience sections on homepage */
+.dark section#education,
+.dark section#experience {
+  background-color: #0a0a0a !important;
+}
+
+.dark .education-card,
+.dark .experience-card {
+  background: rgba(26, 26, 26, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .education-card:hover,
+.dark .experience-card:hover {
+  background: rgba(30, 30, 30, 0.9) !important;
+  border-color: rgba(99, 102, 241, 0.4) !important;
+}
+
+.dark .education-icon,
+.dark .experience-icon {
+  background: rgba(40, 40, 40, 0.8) !important;
+}
+
+.dark .education-content h3,
+.dark .experience-content h3,
+.dark .education-content p,
+.dark .experience-content p,
+.dark .education-content .institution,
+.dark .experience-content .institution,
+.dark .education-content .details,
+.dark .experience-content .details {
+  color: #ffffff !important;
+}
+
+.dark .education-content .institution,
+.dark .experience-content .institution,
+.dark .education-content .details,
+.dark .experience-content .details {
+  color: #9ca3af !important;
+}
+
+/* Hide Hugo Blox Builder credits in footer */
+.site-footer a[href*="hugoblox.com"],
+.site-footer p:has(a[href*="hugoblox.com"]),
+footer a[href*="hugoblox.com"],
+footer p:has(a[href*="hugoblox.com"]) {
+  display: none !important;
+}
+
+/* Remove gap between navbar and page content - apply to all pages */
+header.hb-header {
+  margin-bottom: 0 !important;
+}
+
+main,
+.page-body {
+  margin-top: -1rem !important;
+  padding-top: 0 !important;
+}
+
+/* Add top margin for individual publication/article pages */
+article.max-w-prose {
+  padding-top: 3rem !important;
+}
+
+article h1:first-of-type,
+.article-header h1,
+.page-header h1 {
+  margin-top: 2rem !important;
+  padding-top: 2rem !important;
+}
+
+/* Specific targeting for publication pages */
+body main > article h1:first-child,
+body main article.max-w-prose > h1:first-child {
+  margin-top: 3rem !important;
+  padding-top: 1rem !important;
+}
+
+/* Reduce inter-section gaps on mobile */
+@media (max-width: 768px) {
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  section#education,
+  section#experience {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
+
+/* Add bullet points to publication list */
+.view-citation article,
+.view-citation li,
+div[class*="citation"] {
+  display: list-item !important;
+  list-style-type: disc !important;
+  list-style-position: outside !important;
+  margin-left: 2rem !important;
+}
+
+/* Style books and patents sections to match publications */
+section:has(h2:contains("Books")),
+section:has(h2:contains("Patent")) {
+  ol {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 0;
+  }
+  
+  ol li {
+    counter-increment: item;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    position: relative;
+  }
+  
+  ol li::before {
+    content: counter(item) ". ";
+    position: absolute;
+    left: 0;
+    font-weight: normal;
+  }
+  
+  ol li strong {
+    font-weight: 600;
+  }
+}
+
+/* Reduce gap between section titles and content for all publication sections */
+section[id*="publication"] .section-heading,
+section[id*="book"] .section-heading,
+section[id*="patent"] .section-heading,
+.page-header h1 {
+  margin-bottom: 0.25rem !important;
+}
+
+section[id*="publication"] .section-heading + *,
+section[id*="book"] .section-heading + *,
+section[id*="patent"] .section-heading + * {
+  margin-top: 0 !important;
+}
+
+/* Additional selectors for publication title spacing */
+.page-body h1,
+.page-body h2,
+.page-body .block-title,
+.section-heading {
+  margin-bottom: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.view-citation,
+.article-style {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the main Publications page title */
+.page-header {
+  margin-bottom: 0.5rem !important;
+  padding-bottom: 0 !important;
+}
+
+/* Reduce spacing after all h1 and h2 headings in publications area */
+h1, h2 {
+  margin-bottom: 0.25rem !important;
+}
+
+h1 + *, h2 + * {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Aggressive targeting for publication page spacing */
+.page-body > * > h1,
+.page-body > * > h2,
+.hbx-prose h1,
+.hbx-prose h2 {
+  margin-bottom: 0.25rem !important;
+  padding-bottom: 0 !important;
+}
+
+/* Target collection blocks */
+.hbx-collection {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Hide education section from resume-biography-3 block */
+.hbx-resume-biography-education {
+  display: none !important;
+}
+
+/* Full width education section - override all HugoBlox constraints */
+section#education,
+section#experience {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+section#education .hb-w-prose,
+section#education .prose,
+section#education [class*="prose"],
+section#education [class*="container"],
+section#education > div,
+section#experience .hb-w-prose,
+section#experience .prose,
+section#experience [class*="prose"],
+section#experience [class*="container"],
+section#experience > div {
+  max-width: 1400px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Force single column layout for education and interests */
+.hbx-resume-biography-education,
+.hbx-resume-biography-interests {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  align-items: flex-start !important;
+}
+
+/* Override ALL grid-related classes to force single column */
+.hbx-resume-biography-education [class*="grid"],
+.hbx-resume-biography-interests [class*="grid"],
+.hbx-resume-biography-education .grid,
+.hbx-resume-biography-interests .grid,
+.hbx-resume-biography-education > div[class*="grid"],
+.hbx-resume-biography-interests > div[class*="grid"] {
+  display: flex !important;
+  flex-direction: column !important;
+  grid-template-columns: 1fr !important;
+  width: 100% !important;
+  gap: 1.5rem !important;
+}
+
+/* Force all child elements to full width */
+.hbx-resume-biography-education [class*="grid"] > *,
+.hbx-resume-biography-interests [class*="grid"] > *,
+.hbx-resume-biography-education .grid > *,
+.hbx-resume-biography-interests .grid > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  grid-column: 1 / -1 !important;
+}
+
+/* Remove centering from all elements */
+.hbx-resume-biography-education *,
+.hbx-resume-biography-interests * {
+  text-align: left !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  margin-left: 0 !important;
+}
+
+/* Target specific Tailwind classes that might be causing issues */
+.hbx-resume-biography-education [class*="text-center"],
+.hbx-resume-biography-interests [class*="text-center"] {
+  text-align: left !important;
+}
+
+.hbx-resume-biography-education [class*="justify-center"],
+.hbx-resume-biography-interests [class*="justify-center"] {
+  justify-content: flex-start !important;
+}
+
+.hbx-resume-biography-education [class*="items-center"],
+.hbx-resume-biography-interests [class*="items-center"] {
+  align-items: flex-start !important;
+}
+
+.hbx-resume-biography-education [class*="mx-auto"],
+.hbx-resume-biography-interests [class*="mx-auto"] {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Override any Tailwind grid classes */
+.hbx-resume-biography-education [class*="grid-cols"],
+.hbx-resume-biography-interests [class*="grid-cols"] {
+  grid-template-columns: 1fr !important;
+}
+
+/* Force cards/items to full width and left align */
+.hbx-resume-biography-education [class*="card"],
+.hbx-resume-biography-education [class*="item"],
+.hbx-resume-biography-interests [class*="card"],
+.hbx-resume-biography-interests [class*="item"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+/* Table wrapper for horizontal scroll */
+.full-width-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+/* Mobile responsive tables - horizontal scroll */
+@media (max-width: 768px) {
+  .full-width-section > div > div,
+  .full-width-section > div {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .full-width-section table {
+    min-width: 800px;
+    display: table;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Reset padding for table container on mobile */
+  .full-width-section .container,
+  .full-width-section > div,
+  .full-width-section .prose,
+  .full-width-section .markdown {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Better table styling */
+.full-width-section th,
+.full-width-section td {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.dark .full-width-section th,
+.dark .full-width-section td {
+  border-color: #374151;
+}
+
+.full-width-section th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+.dark .full-width-section th {
+  background-color: #1f2937;
+}
+
+.full-width-section tr:hover {
+  background-color: #f3f4f6;
+}
+
+.dark .full-width-section tr:hover {
+  background-color: #1f2937;
+}
