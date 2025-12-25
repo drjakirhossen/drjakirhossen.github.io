@@ -1,81 +1,87 @@
-# Dr. Md. Jakir Hossen - Academic Portfolio Website
+# Dr. Md. Jakir Hossen
 
-Personal academic portfolio site built with Hugo Blox and Hugo. The site presents
-biography, education, experience, publications, and other academic materials.
+Associate Professor, Department of Robotics and Automation, Faculty of Engineering and Technology, Multimedia University (MMU), Melaka, Malaysia.
 
-Live site (project Pages):
-https://drjakirhossen.github.io/noble-aurora/
+## Profile
 
-## Overview
+Dr. Md. Jakir Hossen is an Associate Professor with 19+ years of academic experience. He focuses on Artificial Intelligence, Data Analytics, Anomaly Detection, Robotics Control, Healthcare IoT, and Renewable Energy. He is a Senior Member of IEEE (SMIEEE), Member of IET (MIET), and a Professional Technologist (P.TECH) in Malaysia.
 
-- Owner: Dr. Md. Jakir Hossen, Associate Professor, Department of Robotics and Automation, Faculty of Engineering and Technology, Multimedia University (MMU), Melaka, Malaysia.
-- Focus: academic profile, education, experience, research, and publications.
-- Stack: Hugo Blox, Hugo, Tailwind CSS v4, Preact.
+## Research Metrics
 
-## Repository layout
+- Published extensively in journals and conferences, with books or chapters and patents or copyrights.
+- h-index 16 (Google Scholar)
+- h-index 11 (Scopus)
 
-- `content/`: site content (home, sections, publications, teaching, others).
-- `config/_default/`: Hugo configuration (`hugo.yaml`, `params.yaml`, menus, languages).
-- `assets/`: custom assets, including `assets/css/custom.css`.
-- `layouts/`: template overrides.
-- `static/`: static files copied as-is.
-- `resources/`: Hugo build cache.
-- `public/`: generated site output (build artifact).
-- `.github/workflows/deploy.yml`: GitHub Pages build and deploy pipeline.
+## Research Interests
 
-## Local development
+- Artificial Intelligence and Machine Learning
+- Data Analytics
+- Anomaly Detection
+- Object Detection
+- Healthcare IoT
+- Renewable Energy
+- Robotics Control
 
-Requirements:
-- Hugo Extended (workflow uses 0.152.2).
-- Node.js 20+
-- pnpm (or npm)
+## Academic Positions
 
-Run:
+- Associate Professor, Multimedia University (MMU), 2022 to present
+- Senior Lecturer, MMU, 2015 to 2022
+- Lecturer, MMU, 2009 to 2015
+- Lecturer, University Technology Legenda, 2006 to 2008
+- Graduate Research Assistant, University Putra Malaysia (UPM), 2000 to 2005
+- System Engineer, Falcon Information Technology, 1999 to 2000
+- Assistant Engineer, World Trade Enterprise, 1997 to 1998
+- Lecturer (Part-time), Institute of Admission Center for Engineers, 1997
 
-```bash
-pnpm install
-pnpm run dev
-```
+## Education
 
-Then open http://localhost:1313
+- PhD in Smart Technology and Robotics Engineering, University Putra Malaysia (UPM), 2003 to 2012
+- M.Sc. in Communication and Network Engineering, UPM, 2000 to 2003
+- Higher Diploma in Computer Science and Engineering, NYDASA, 1999
+- B.Sc. in Mechanical Engineering, DUET, 1993 to 1997
+- Diploma in Automobile Engineering, Dinajpur Polytechnic Institute, 1989 to 1992
 
-## Build
+## Teaching
 
-```bash
-pnpm run build
-```
+Taught subjects include Artificial Intelligence and Application, Knowledge Based Systems, Robotics, Robotics and Automation, Advanced Robotics, Control Theory, Control Engineering, Circuit Theory, Theory of Machine, Computer and Programming Design, Computer Organizations, Advanced Computer Network and Data Communication, and Computer Applications and Programming.
 
-Output is generated in `public/`.
+Teaching evaluation highlights include top scores in Advanced Robotics and AI Application across multiple sessions.
 
-## Deployment (GitHub Pages)
+## Supervision
 
-This repo uses GitHub Actions (`.github/workflows/deploy.yml`) to build and deploy
-to GitHub Pages. Ensure:
+Supervised postgraduate research in AI, IoT, robotics, data analytics, and healthcare, including completed PhD and Master's projects, with ongoing supervision of multiple postgraduate students.
 
-- Pages is enabled in the repo settings.
-- Source is set to GitHub Actions.
-- `baseURL` matches the Pages URL in `config/_default/hugo.yaml`.
+## Awards and Honors (Selected)
 
-For project Pages (repo not named `username.github.io`):
+- Best Paper Award for indoor object detection using YOLOv5s and Grad-CAM (MECON 2025)
+- Gold and Bronze medals for AI, robotics, and healthcare projects (iNVENTX and iVENTX, MMU)
+- Best Researcher Award, International Scientist Awards on Engineering, Science and Medicine (2021)
+- Multiple research poster awards at MMU technical sessions
 
-```
-baseURL: 'https://drjakirhossen.github.io/noble-aurora/'
-```
+## Recognition and Service (Selected)
 
-For a user site (repo named `drjakirhossen.github.io`):
+- Conference Chair, MECON 2023
+- Conference Co-Chair, MECON 2024
+- Technical Program Chair, MECON 2021
+- Advisory board and committee roles for international conferences
+- Editorial board member for research journals
 
-```
-baseURL: 'https://drjakirhossen.github.io/'
-```
+## Professional Memberships (Selected)
 
-## Content updates
+- Senior Member, IEEE
+- Member, IET
+- Professional Technologist, MBOT
+- Member, BEM, IAENG, IEB
 
-- Home sections: `content/_index.md`
-- Experience: `content/experience.md`
-- Teaching: `content/teaching/_index.md`
-- Other pages: `content/others/_index.md`
-- Publications: `content/publications/` (and related data in `data/` if used)
+## Project Grants (Selected)
 
-## License
+Leads and contributes to funded projects in AMR, smart home energy, water quality monitoring, robotics localization, and AI-based diagnosis. Funding includes TM R&D, FRDGS, and internal university grants.
 
-See `LICENSE.md`.
+## Contact
+
+- jakir.hossen@mmu.edu.my
+- jhossen1973@gmail.com
+- LinkedIn: https://www.linkedin.com/in/dr-md-jakir-hossen-67016239/
+- Google Scholar: https://scholar.google.com.my/citations?user=oKuBw2EAAAAJhl=en
+- ORCID: https://orcid.org/0000-0002-9978-7987
+- Facebook: https://www.facebook.com/jakir.hossen.31
