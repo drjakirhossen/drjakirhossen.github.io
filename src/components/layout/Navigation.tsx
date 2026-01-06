@@ -8,6 +8,7 @@ import { profile } from "@/data/profile";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const assetBase = import.meta.env.BASE_URL;
   const [theme, setTheme] = useState<"night" | "day">(() => {
     if (typeof window === "undefined") {
       return "night";
@@ -77,7 +78,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Button size="sm" className="button-gradient" asChild>
-              <a href="/jakir-hossen-cv.pdf" target="_blank" rel="noopener noreferrer">
+              <a href={`${assetBase}jakir-hossen-cv.pdf`} target="_blank" rel="noopener noreferrer">
                 Curriculum Vitae
               </a>
             </Button>
@@ -129,7 +130,7 @@ const Navigation = () => {
                     asChild
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    <a href="/jakir-hossen-cv.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href={`${assetBase}jakir-hossen-cv.pdf`} target="_blank" rel="noopener noreferrer">
                       Curriculum Vitae
                     </a>
                   </Button>

@@ -32,6 +32,7 @@ import {
 } from "@/data/academic";
 
 const Academic = () => {
+  const assetBase = import.meta.env.BASE_URL;
   return (
     <div className="min-h-screen bg-black text-foreground relative overflow-hidden">
       <div className="fixed inset-0 z-0 bg-black overflow-hidden">
@@ -74,12 +75,12 @@ const Academic = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Button size="lg" className="button-gradient" asChild>
-              <a href="/jakir-hossen-cv.pdf" target="_blank" rel="noopener noreferrer">
+              <a href={`${assetBase}jakir-hossen-cv.pdf`} target="_blank" rel="noopener noreferrer">
                 Download CV
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="/">Back to Home</a>
+              <a href={assetBase}>Back to Home</a>
             </Button>
           </div>
         </div>

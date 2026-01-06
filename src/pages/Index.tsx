@@ -14,6 +14,7 @@ import { profile } from "@/data/profile";
 const Index = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const assetBase = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -230,10 +231,10 @@ const Index = () => {
                 View Research
               </Button>
               <Button size="lg" variant="link" className="text-white flex-1 sm:flex-none justify-center" asChild>
-                <a href="/jakir-hossen-cv.pdf" target="_blank" rel="noopener noreferrer">
-                  Download CV <ArrowRight className="ml-2 w-4 h-4" />
-                </a>
-              </Button>
+              <a href={`${assetBase}jakir-hossen-cv.pdf`} target="_blank" rel="noopener noreferrer">
+                Download CV <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+            </Button>
             </motion.div>
           </div>
 
@@ -241,7 +242,7 @@ const Index = () => {
             <div className="bg-black/40 border border-white/10 rounded-2xl p-4 md:p-6 backdrop-blur-xl shadow-lg">
               <div className="rounded-2xl overflow-hidden border border-white/10">
                 <img
-                  src="/jakir.jpg"
+                  src={`${assetBase}jakir.jpg`}
                   alt={profile.name}
                   className="w-full h-auto object-cover"
                   loading="lazy"
