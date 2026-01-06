@@ -227,9 +227,9 @@ const Index = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-row gap-2 md:gap-4 items-center"
             >
-              <Button size="lg" className="button-gradient flex-1 sm:flex-none" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
-                View Research
-              </Button>
+            <Button size="lg" className="button-gradient flex-1 sm:flex-none" asChild>
+              <a href={`${assetBase}publications`}>View Research</a>
+            </Button>
               <Button size="lg" variant="link" className="text-white flex-1 sm:flex-none justify-center" asChild>
               <a href={`${assetBase}jakir-hossen-cv.pdf`} target="_blank" rel="noopener noreferrer">
                 Download CV <ArrowRight className="ml-2 w-4 h-4" />
