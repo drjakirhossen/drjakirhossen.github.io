@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://drjakirhossen.github.io/sitemap.xml
+
+# Allow all bots to crawl everything
+Crawl-delay: 1
+
+# Block access to admin or private areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow access to CSS and JS files
+Allow: /src/
+Allow: /public/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.svg$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.pdf$
