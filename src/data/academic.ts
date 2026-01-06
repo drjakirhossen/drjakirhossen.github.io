@@ -105,7 +105,15 @@
 
 export const books = [
   {
-    title: "A MODIFIED ADAPTIVE NEURO-FUZZY INFERENCE ENGINE AND ITS APPLICATIONS",
+    title: "Key Applications of Robotics and Communication Systems",
+    authors: "Md. Jakir Hossen; Min Thu Soe; Thangavel Bhuvaneswari; Joseph Emerson Raja",
+    publication:
+      "Multimedia University (MMU Press), ISBN 978-629-7709-29-1, 2025 (Book)",
+    year: "2025",
+    type: "Book",
+  },
+  {
+    title: "A Modified Adaptive Neuro-Fuzzy Inference Engine And Its Applications",
     authors: "Md. Jakir Hossen",
     publication:
       "Lambert Academic Publishing, ISBN 9783330044135, 2017 (Research Book)",

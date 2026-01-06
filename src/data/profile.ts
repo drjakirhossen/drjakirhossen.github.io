@@ -10,10 +10,10 @@ export const profile = {
   stats: [
     { label: "Journal Papers (WoS/Scopus)", value: "150+" },
     { label: "Conference Papers", value: "50+" },
-    { label: "Books/Chapters", value: "3" },
+    { label: "Books/Chapters", value: "4" },
     { label: "Patents/Copyrights", value: "3" },
-    { label: "H-index (Google Scholar)", value: "16" },
-    { label: "H-index (Scopus)", value: "11" },
+    { label: "H-index (Google Scholar)", value: "23" },
+    { label: "H-index (Scopus)", value: "18" },
   ],
   interests: [
     "Artificial Intelligence (AI)",
