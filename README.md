@@ -8,7 +8,7 @@ Dr. Md. Jakir Hossen is an Associate Professor with 19+ years of academic experi
 
 ## Research Metrics
 
-- Published extensively in journals and conferences, with books or chapters and patents or copyrights.
+- Published extensively in journals and conferences, with books or chapters and patents or copyrights
 - h-index 16 (Google Scholar)
 - h-index 11 (Scopus)
 
