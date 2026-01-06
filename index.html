@@ -6,9 +6,8 @@
     <script>
       (function () {
         if (window.location.search.startsWith("?/")) {
-          var base = "/version-2";
           var path = window.location.search.replace("?/", "").replace(/&/g, "?");
-          window.history.replaceState(null, "", base + "/" + path);
+          window.history.replaceState(null, "", "/" + path);
         }
       })();
     </script>
