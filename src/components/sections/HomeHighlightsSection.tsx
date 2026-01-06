@@ -185,9 +185,10 @@ export const HomeHighlightsSection = () => {
                       {award.summary ? (
                         <p className="text-sm text-gray-500">{award.summary}</p>
                       ) : null}
+                      <span className="text-sm text-gray-400 md:hidden">{award.year}</span>
                     </div>
                   </div>
-                  <span className="text-sm text-gray-400 md:text-base">{award.year}</span>
+                  <span className="hidden md:inline text-sm text-gray-400 md:text-base">{award.year}</span>
                 </div>
               </div>
             );
