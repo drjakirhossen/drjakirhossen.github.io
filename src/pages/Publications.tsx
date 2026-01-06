@@ -1,10 +1,12 @@
 ﻿import PageShell from "@/components/layout/PageShell";
+import { Button } from "@/components/ui/button";
 import {
   publications,
   books,
   patents,
   projectGrants,
 } from "@/data/academic";
+import { profile } from "@/data/profile";
 import {
   Table,
   TableBody,
@@ -47,7 +49,14 @@ const Publications = () => {
     >
       <section className="container px-4 pb-16 md:pb-24 relative z-10 space-y-12">
         <div>
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">Journal Publications (Selected)</h2>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold">Journal Publications (Selected)</h2>
+            <Button size="sm" className="button-gradient" asChild>
+              <a href={profile.social.scholar} target="_blank" rel="noopener noreferrer">
+                View All Publications
+              </a>
+            </Button>
+          </div>
           <div className="grid grid-cols-1 gap-6">
             {publications.map((publication, index) => (
               <div
@@ -152,4 +161,7 @@ const Publications = () => {
 };
 
 export default Publications;
+
+
+
 

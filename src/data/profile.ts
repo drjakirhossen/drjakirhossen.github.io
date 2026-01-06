@@ -46,7 +46,7 @@ export const profile = {
   ],
   social: {
     linkedin: "https://www.linkedin.com/in/dr-md-jakir-hossen-67016239/",
-    scholar: "https://scholar.google.com.my/citations?user=oKuBw2EAAAAJhl=en",
+    scholar: "https://scholar.google.com/citations?user=oKuBw2EAAAAJ&hl=en",
     orcid: "https://orcid.org/0000-0002-9978-7987",
     facebook: "https://www.facebook.com/jakir.hossen.31",
   },

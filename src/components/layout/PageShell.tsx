@@ -49,20 +49,28 @@ const PageShell = ({ title, subtitle, actions, align = "left", children }: PageS
         transition={{ duration: 0.5 }}
         className="relative container px-4 pt-24 md:pt-40 pb-8 md:pb-12 z-10"
       >
-        <div className={`max-w-4xl relative z-10 ${align === "center" ? "mx-auto" : ""}`}>
-          <h1 className={`text-2xl sm:text-3xl md:text-5xl font-normal mb-4 tracking-tight leading-tight ${alignment}`}>
-            {title}
-          </h1>
-          {subtitle ? (
-            <p className={`text-sm sm:text-base md:text-lg text-gray-200 mb-6 md:mb-8 leading-relaxed ${alignment}`}>
-              {subtitle}
-            </p>
-          ) : null}
-          {actions ? (
-            <div className={`flex flex-col sm:flex-row gap-3 ${align === "center" ? "justify-center" : ""}`}>
-              {actions}
+        <div className="relative z-10 w-full">
+          <div
+            className={`flex w-full flex-col gap-4 ${
+              align === "center" ? "items-center text-center md:justify-center" : "items-start md:justify-between"
+            } md:flex-row md:items-start`}
+          >
+            <div className={`max-w-4xl ${align === "center" ? "mx-auto" : ""}`}>
+              <h1 className={`text-2xl sm:text-3xl md:text-5xl font-normal mb-4 tracking-tight leading-tight ${alignment}`}>
+                {title}
+              </h1>
+              {subtitle ? (
+                <p className={`text-sm sm:text-base md:text-lg text-gray-200 mb-6 md:mb-8 leading-relaxed ${alignment}`}>
+                  {subtitle}
+                </p>
+              ) : null}
             </div>
-          ) : null}
+            {actions ? (
+              <div className={`${align === "center" ? "mt-1" : "md:pt-2"} shrink-0`}>
+                {actions}
+              </div>
+            ) : null}
+          </div>
         </div>
       </motion.section>
 
