@@ -18,7 +18,7 @@ const App = () => (
       <div className="min-h-screen bg-background">
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/version-2">
           <Routes>
             <Route path="/" element={<Bio />} />
             <Route path="/bio" element={<Navigate to="/" replace />} />
