@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        if (window.location.search.startsWith("?/")) {
+          var base = "/version-2";
+          var path = window.location.search.replace("?/", "").replace(/&/g, "?");
+          window.history.replaceState(null, "", base + "/" + path);
+        }
+      })();
+    </script>
     
     <!-- Primary Meta Tags -->
     <title>Ts. Dr. Md. Jakir Hossen | Associate Professor, AI & Robotics</title>
