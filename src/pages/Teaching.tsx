@@ -73,7 +73,7 @@ const Teaching = () => {
                   <TableHead>Year/Session</TableHead>
                   <TableHead>Programme</TableHead>
                   <TableHead>Subject</TableHead>
-                  <TableHead>Evaluation</TableHead>
+                  <TableHead>Academic Evaluation (out of 5)</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>

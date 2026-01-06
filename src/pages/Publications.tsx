@@ -47,7 +47,7 @@ const Publications = () => {
     >
       <section className="container px-4 pb-16 md:pb-24 relative z-10 space-y-12">
         <div>
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">Journal Publications</h2>
+          <h2 className="text-xl md:text-2xl font-semibold mb-4">Journal Publications (Selected)</h2>
           <div className="grid grid-cols-1 gap-6">
             {publications.map((publication, index) => (
               <div
